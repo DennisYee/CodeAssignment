@@ -1,0 +1,15 @@
+class Shark extends Fish{
+	
+	void characteristic(){
+		System.out.println("large and grey");
+		System.out.println("eat other fish");
+	}
+}
+
+class Clownfish extends Fish{
+	
+	void characteristic(){
+		System.out.println("small and colourful");
+		System.out.println("make jokes");
+	}
+}
