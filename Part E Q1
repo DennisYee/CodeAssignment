@@ -1,0 +1,68 @@
+class Dog extends Animal{
+}
+
+class Cat extends Animal{
+}
+
+class Frog extends Animal{
+    
+    @Override
+    Boolean isAbleToWalk(){
+		return false;
+	}
+}
+
+public class Solution{
+
+	public static void main(String[] args){
+		Bird bird=new Bird();
+		bird.walk();
+		bird.fly();
+		bird.sing();
+		
+		Animal[] animals = new Animal[]{
+        	new Bird(),
+        	new Duck(),
+        	new Chicken(),
+        	new Rooster(),
+        	new Parrot(),
+        	new Fish(),
+        	new Shark(),
+        	new Clownfish(),
+        	new Dolphin(),
+        	new Frog(),
+            new Dog(),
+            new Butterfly(),
+            new Cat()
+    };
+        
+
+        int flyInd=0;
+        int swimInd=0;
+        int walkInd=0;
+        int singInd=0;
+        
+        for(int i=0;i<animals.length;i++){
+            if(animals[i].isAbleToWalk()){
+                walkInd+=1;
+            }
+            
+            if(animals[i].isAbleToFly()){
+                flyInd+=1;
+            }
+	
+    	    if(animals[i].isAbleToSing()){
+    	        singInd+=1;
+    	    }
+	
+	        if(animals[i].isAbleToSwim()){
+	            swimInd+=1;
+            }
+        }
+        
+            System.out.println("Numbers of animals can fly  : "+flyInd);
+            System.out.println("Numbers of animals can walk : "+walkInd);
+            System.out.println("Numbers of animals can sing : "+singInd);
+            System.out.println("Numbers of animals can swim : "+swimInd);
+    }
+}
