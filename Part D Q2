@@ -1,0 +1,12 @@
+class Caterpillar extends Butterfly{
+	@Override
+	Boolean isAbleToWalk(){
+		return true;
+	}
+  
+	@Override
+	Boolean isAbleToFly(){
+		return false;
+	}
+
+}
