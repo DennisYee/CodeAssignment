@@ -1,0 +1,51 @@
+class Bird extends Animal{
+	
+	void fly(){
+		System.out.println("I am flying");
+	}
+	
+	void sing(){
+		System.out.println("I am singing");
+	}
+	
+	@Override
+	Boolean isAbleToFly(){
+		return true;
+	}
+	
+	@Override
+	Boolean isAbleToSing(){
+		return true;
+	}
+	
+	@Override
+	Boolean isAbleToSwim(){
+		return true;
+	}
+
+}
+
+class Duck extends Bird{
+	
+	void sound(){
+		System.out.println("Quack, quack");
+	}
+
+}
+
+class Chicken extends Bird{
+
+	void sound(){
+		System.out.println("Cluck, cluck");
+	}
+	
+	@Override
+	Boolean isAbleToFly(){
+		return false;
+	}
+		
+	@Override
+	Boolean isAbleToSwim(){
+		return false;
+	}
+}	
