@@ -1,0 +1,6 @@
+class Rooster extends Bird{
+	
+	void sound(){
+		System.out.println("Cock-a-doodle-doo");
+	}
+}
