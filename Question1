@@ -1,9 +1,22 @@
-class Bird extends Animal{
-    void fly(){
-        System.out.println("I am flying");
-    }
-    
-    void sing(){
-        System.out.println("I am singing");
-    }
+class Animal{
+	void walk(){
+		System.out.println("I am walking");
+	}
+	
+	Boolean isAbleToWalk(){
+		return true;
+	}
+	
+	Boolean isAbleToFly(){
+		return false;
+	}
+	
+	Boolean isAbleToSing(){
+		return true;
+	}
+	
+	Boolean isAbleToSwim(){
+		return true;
+	}
+
 }
