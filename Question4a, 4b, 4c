@@ -1,0 +1,13 @@
+class Parrot extends Bird{
+	void livingWithDog(){
+		System.out.println("Woof, woof");
+	}
+	
+	void livingWithCats(){
+		System.out.println("Meow");
+	}
+	
+	void livingWithRooster(){
+		System.out.println("Cock-a-doodle-doo");
+	}
+}
