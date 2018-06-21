@@ -1,0 +1,23 @@
+class Fish extends Animal{
+	
+	@Override
+	Boolean isAbleToWalk(){
+		return false;
+	}
+	
+  @Override
+	Boolean isAbleToFly(){
+		return false;
+	}
+	
+  @Override
+	Boolean isAbleToSing(){
+		return false;
+	}
+	
+  @Override
+	Boolean isAbleToSwim(){
+		return true;
+	}
+		
+}
