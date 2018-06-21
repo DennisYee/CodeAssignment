@@ -1,0 +1,21 @@
+class Butterfly extends Animal{
+	@Override
+	Boolean isAbleToWalk(){
+		return false;
+	}
+  
+	@Override
+	Boolean isAbleToFly(){
+		return true;
+	}
+  
+	@Override
+	Boolean isAbleToSing(){
+		return false;
+	}
+  
+	@Override
+	Boolean isAbleToSwim(){
+		return false;
+	}
+}
